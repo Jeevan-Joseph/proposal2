@@ -1,0 +1,89 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- 🎵 MUSIC START OVERLAY -->
+  <div id="musicOverlay">
+    <button onclick="startExperience()">Tap to Begin 💖</button>
+  </div>
+
+  <!-- 💖 MAIN CONTENT -->
+  <div class="container">
+    <h1 id="message">Hi Love ❤️</h1>
+
+    <img id="memoryPhoto" src="" alt="Our Memory">
+    <p id="caption"></p>
+
+    <!-- 💍 PROPOSAL BUTTONS -->
+    <div id="proposalButtons" style="display:none;">
+      <button id="yesBtn" onclick="yesClicked()">YES 💖</button>
+      <button id="noBtn">NO 😈</button>
+    </div>
+
+    <!-- 🎉 FINAL PAGE -->
+    <div id="finalPage" style="display:none;">
+      <h1>She said YES 💍❤️</h1>
+      <p>My forever starts with you ✨</p>
+    </div>
+
+    <!-- 🔘 CONTINUE BUTTON -->
+    <button onclick="nextMessage()">Continue →</button>
+  </div>
+
+  <!-- 🎵 BACKGROUND MUSIC -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- 📜 SCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>For You ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 id="message">Hi Love ❤️</h1>
+
+    <img id="memoryPhoto" src="" alt="Our Memory">
+    <p id="caption"></p>
+    <div id="proposalButtons" style="display:none;">
+    <button id="yesBtn" onclick="yesClicked()">YES 💖</button>
+    <button id="noBtn">NO 😈</button>
+    </div>
+    <div id="finalPage" style="display:none;">
+    <h1>She said YES 💍❤️</h1>
+    <p>My forever starts with you ✨</p>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="assets/music.mp3" type="audio/mpeg">
+    </audio>
+    
+
+
+    <button onclick="playMusic(); nextMessage()">Continue →</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+>>>>>>> 0df6ff8480899f2243a9844dc93192a0a924f761

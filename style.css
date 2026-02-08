@@ -1,0 +1,292 @@
+<<<<<<< HEAD
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  text-align: center;
+  color: white;
+  max-width: 90%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 12px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  background: white;
+  color: #ff4f7a;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+#memoryPhoto {
+  width: 280px;
+  height: auto;
+  margin: 25px auto;
+  border-radius: 20px;
+  display: none;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+  animation: fade 0.8s ease-in-out;
+}
+
+
+#caption {
+  display: none;
+  font-size: 1.2rem;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+#proposalButtons {
+  margin-top: 30px;
+}
+
+#yesBtn {
+  background: #ff4f7a;
+  color: white;
+  margin-right: 20px;
+}
+
+#noBtn {
+  background: white;
+  color: #ff4f7a;
+  position: relative;
+}
+
+
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  top: -10px;
+  animation: fall 3s linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  #memoryPhoto {
+    width: 90%;
+  }
+
+  button {
+    width: 80%;
+    margin-top: 10px;
+  }
+}
+
+#finalPage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  z-index: 999;
+}
+
+#finalPage h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+#finalPage p {
+  font-size: 1.4rem;
+}
+
+
+#musicOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#musicOverlay button {
+  padding: 18px 40px;
+  font-size: 1.4rem;
+  border-radius: 40px;
+  background: white;
+  color: #ff4f7a;
+}
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  text-align: center;
+  color: white;
+  max-width: 90%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 12px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  background: white;
+  color: #ff4f7a;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+#memoryPhoto {
+  width: 280px;
+  height: auto;
+  margin: 25px auto;
+  border-radius: 20px;
+  display: none;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+  animation: fade 0.8s ease-in-out;
+}
+
+
+#caption {
+  display: none;
+  font-size: 1.2rem;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+#proposalButtons {
+  margin-top: 30px;
+}
+
+#yesBtn {
+  background: #ff4f7a;
+  color: white;
+  margin-right: 20px;
+}
+
+#noBtn {
+  background: white;
+  color: #ff4f7a;
+  position: relative;
+}
+
+
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  top: -10px;
+  animation: fall 3s linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  #memoryPhoto {
+    width: 90%;
+  }
+
+  button {
+    width: 80%;
+    margin-top: 10px;
+  }
+}
+
+#finalPage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  z-index: 999;
+}
+
+#finalPage h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+#finalPage p {
+  font-size: 1.4rem;
+}
+
+>>>>>>> 0df6ff8480899f2243a9844dc93192a0a924f761
